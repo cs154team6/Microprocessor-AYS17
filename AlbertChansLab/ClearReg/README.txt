@@ -1,0 +1,1 @@
+After clear all the content of the Register, the read head will relocate itself back to the register character.
