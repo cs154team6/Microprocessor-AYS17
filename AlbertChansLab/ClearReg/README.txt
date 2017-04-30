@@ -1,1 +1,2 @@
-After clear all the content of the Register, the read head will relocate itself back to the register character.
+Initial read head position is expected to be at the Assembly section before calling ClearReg.
+After clearing all the content of the Register, the read head will relocate itself back to the register character.
