@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 6.4.--><structure>
+	<type>turing</type>
+	<automaton>
+		<!--The list of states.-->
+		<block id="0" name="q0">
+			<tag>Machine0</tag>
+			<x>166.0</x>
+			<y>376.0</y>
+			<initial/>
+		</block>
+		<block id="1" name="ClearBR">
+			<tag>ClearBR.jff</tag>
+			<x>319.0</x>
+			<y>375.0</y>
+		</block>
+		<block id="2" name="q2">
+			<tag>Machine2</tag>
+			<x>783.0</x>
+			<y>157.0</y>
+		</block>
+		<block id="3" name="q3">
+			<tag>Machine3</tag>
+			<x>630.0</x>
+			<y>374.0</y>
+		</block>
+		<block id="4" name="LocBR_left">
+			<tag>LocBR_left.jff</tag>
+			<x>1025.0</x>
+			<y>266.0</y>
+		</block>
+		<block id="5" name="q5">
+			<tag>Machine5</tag>
+			<x>1028.0</x>
+			<y>546.0</y>
+		</block>
+		<block id="6" name="q6">
+			<tag>Machine6</tag>
+			<x>790.0</x>
+			<y>537.0</y>
+		</block>
+		<block id="9" name="q9">
+			<tag>Machine9</tag>
+			<x>1023.0</x>
+			<y>158.0</y>
+		</block>
+		<block id="10" name="LocBR_left">
+			<tag>LocBR_left.jff</tag>
+			<x>1029.0</x>
+			<y>452.0</y>
+		</block>
+		<block id="12" name="LocBR_left">
+			<tag>LocBR_left.jff</tag>
+			<x>1023.0</x>
+			<y>362.0</y>
+		</block>
+		<block id="13" name="q13">
+			<tag>Machine13</tag>
+			<x>1251.0</x>
+			<y>368.0</y>
+			<final/>
+		</block>
+		<block id="14" name="q14">
+			<tag>Machine14</tag>
+			<x>468.0</x>
+			<y>369.0</y>
+		</block>
+		<!--The list of transitions.-->
+		<transition>
+			<from>3</from>
+			<to>12</to>
+			<read/>
+			<write/>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>12</to>
+			<read>#</read>
+			<write>#</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>9</to>
+			<read>!□</read>
+			<write>~</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<controlx>1029</controlx>
+			<controly>677</controly>
+			<read>!□</read>
+			<write>~</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>X</read>
+			<write>-</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>9</to>
+			<read>b</read>
+			<write>b</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>$</read>
+			<write>X</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>12</from>
+			<to>13</to>
+			<read>b</read>
+			<write>b</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>14</from>
+			<to>14</to>
+			<read>!X</read>
+			<write>~</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>!X</read>
+			<write>~</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>6</to>
+			<read>!X</read>
+			<write>~</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>9</from>
+			<to>2</to>
+			<read/>
+			<write>-</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>6</to>
+			<read/>
+			<write>1</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>10</to>
+			<read>1</read>
+			<write>X</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>!$</read>
+			<write>~</write>
+			<move>R</move>
+		</transition>
+		<transition block="true">
+			<from>1</from>
+			<to>14</to>
+			<read>~</read>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>3</to>
+			<read>X</read>
+			<write>1</write>
+			<move>R</move>
+		</transition>
+		<transition>
+			<from>10</from>
+			<to>5</to>
+			<read>b</read>
+			<write>b</write>
+			<move>L</move>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read>-</read>
+			<write>X</write>
+			<move>S</move>
+		</transition>
+		<transition>
+			<from>14</from>
+			<to>3</to>
+			<read>X</read>
+			<write>$</write>
+			<move>R</move>
+		</transition>
+		<!--The list of automata-->
+		<ClearBR.jff>
+			<!--The list of states.-->
+			<block id="0" name="q0">
+				<tag>Machine0</tag>
+				<x>153.0</x>
+				<y>134.0</y>
+				<initial/>
+			</block>
+			<block id="1" name="q1">
+				<tag>Machine1</tag>
+				<x>397.0</x>
+				<y>135.0</y>
+			</block>
+			<block id="2" name="LocBR_left">
+				<tag>LocBR_left.jff</tag>
+				<x>262.0</x>
+				<y>128.0</y>
+			</block>
+			<block id="3" name="LocBR_right">
+				<tag>LocBR_right.jff</tag>
+				<x>526.0</x>
+				<y>138.0</y>
+			</block>
+			<!--The list of transitions.-->
+			<transition block="true">
+				<from>1</from>
+				<to>3</to>
+				<read/>
+			</transition>
+			<transition>
+				<from>1</from>
+				<to>1</to>
+				<read>!□</read>
+				<write/>
+				<move>L</move>
+			</transition>
+			<transition block="true">
+				<from>0</from>
+				<to>2</to>
+				<read>~</read>
+			</transition>
+			<transition>
+				<from>2</from>
+				<to>1</to>
+				<read>b</read>
+				<write>b</write>
+				<move>L</move>
+			</transition>
+			<!--The list of automata-->
+			<LocBR_left.jff>
+				<!--The list of states.-->
+				<block id="0" name="q0">
+					<tag>Machine0</tag>
+					<x>118.0</x>
+					<y>131.0</y>
+					<initial/>
+				</block>
+				<block id="1" name="q1">
+					<tag>Machine1</tag>
+					<x>293.0</x>
+					<y>131.0</y>
+					<final/>
+				</block>
+				<!--The list of transitions.-->
+				<transition>
+					<from>0</from>
+					<to>0</to>
+					<read>!b</read>
+					<write>~</write>
+					<move>L</move>
+				</transition>
+				<transition>
+					<from>0</from>
+					<to>1</to>
+					<read>b</read>
+					<write>b</write>
+					<move>S</move>
+				</transition>
+				<!--The list of automata-->
+				<Machine0/>
+				<Machine1/>
+			</LocBR_left.jff>
+			<Machine0/>
+			<LocBR_right.jff>
+				<!--The list of states.-->
+				<block id="0" name="q0">
+					<tag>Machine0</tag>
+					<x>118.0</x>
+					<y>131.0</y>
+					<initial/>
+				</block>
+				<block id="1" name="q1">
+					<tag>Machine1</tag>
+					<x>293.0</x>
+					<y>131.0</y>
+					<final/>
+				</block>
+				<!--The list of transitions.-->
+				<transition>
+					<from>0</from>
+					<to>1</to>
+					<read>b</read>
+					<write>b</write>
+					<move>S</move>
+				</transition>
+				<transition>
+					<from>0</from>
+					<to>0</to>
+					<read>!b</read>
+					<write>~</write>
+					<move>R</move>
+				</transition>
+				<!--The list of automata-->
+				<Machine0/>
+				<Machine1/>
+			</LocBR_right.jff>
+			<Machine1/>
+		</ClearBR.jff>
+		<Machine9/>
+		<LocBR_left.jff>
+			<!--The list of states.-->
+			<block id="0" name="q0">
+				<tag>Machine0</tag>
+				<x>118.0</x>
+				<y>131.0</y>
+				<initial/>
+			</block>
+			<block id="1" name="q1">
+				<tag>Machine1</tag>
+				<x>293.0</x>
+				<y>131.0</y>
+				<final/>
+			</block>
+			<!--The list of transitions.-->
+			<transition>
+				<from>0</from>
+				<to>0</to>
+				<read>!b</read>
+				<write>~</write>
+				<move>L</move>
+			</transition>
+			<transition>
+				<from>0</from>
+				<to>1</to>
+				<read>b</read>
+				<write>b</write>
+				<move>S</move>
+			</transition>
+			<!--The list of automata-->
+			<Machine0/>
+			<Machine1/>
+		</LocBR_left.jff>
+		<Machine0/>
+		<Machine14/>
+		<Machine2/>
+		<Machine13/>
+		<Machine3/>
+		<Machine6/>
+		<Machine5/>
+	</automaton>
+</structure>
